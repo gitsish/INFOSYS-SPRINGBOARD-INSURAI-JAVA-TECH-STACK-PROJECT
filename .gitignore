@@ -1,0 +1,13 @@
+# Backend
+target/
+*.env
+application.properties
+
+# Frontend
+node_modules/
+dist/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
