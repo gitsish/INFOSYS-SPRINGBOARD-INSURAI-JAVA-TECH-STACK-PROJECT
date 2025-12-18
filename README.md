@@ -169,4 +169,4 @@ Insurai demonstrates a complete AI-enabled full-stack application using modern t
 
 👨‍💻 Project Context
 
-Developed as part of the Infosys Springboard – Java Tech Stack Program BY AAISHA SULTANA GUDURU -22501A4401 CSE-DATA SCIENCE-PVPSIT.
+Developed as part of the Infosys Springboard – Java Tech Stack Program By AAISHA SULTANA GUDURU -22501A4401 CSE-DATA SCIENCE-PVPSIT.
