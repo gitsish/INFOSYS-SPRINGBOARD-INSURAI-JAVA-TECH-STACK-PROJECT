@@ -135,7 +135,6 @@ Custom authentication filters for each role
 
 CORS configuration enabled
 
-📁 Project Structure
 INFOSYS-SPRINGBOARD-INSURAI-JAVA-TECH-STACK-PROJECT
 │
 ├── insurai-backend
@@ -154,6 +153,7 @@ INFOSYS-SPRINGBOARD-INSURAI-JAVA-TECH-STACK-PROJECT
 │   └── vite.config.js
 │
 └── README.md
+
 
 🔗 API Usage (Postman Tested)
 🔑 Admin Login API
