@@ -1,178 +1,234 @@
+
 🛡️ Insurai – AI Powered Insurance Assistance System
 📌 Project Overview
 
-Insurai is a full-stack AI-powered insurance assistance platform developed as part of the Infosys Springboard – Java Tech Stack Project. The application helps users understand insurance policies, submit insurance-related queries, and receive intelligent responses using Cohere AI. The system is built using Spring Boot for the backend and React (Vite) for the frontend, with Supabase used as the cloud database.
+Insurai is a full-stack AI-powered insurance assistance platform developed as part of the Infosys Springboard – Java Tech Stack Project.
+The system digitizes and automates insurance operations such as policy management, claims processing, fraud detection, and employee support using modern web technologies and AI integration.
+
+The application supports multiple user roles (Admin, HR, Agent, Employee) with secure authentication and role-based access.
 
 🌐 Live Application
 
-Frontend (Deployed on Netlify):
+🔗 Frontend (Deployed on Netlify):
 👉 https://effortless-speculoos-08f92d.netlify.app/
 
-Backend: Spring Boot application (deployment-ready, tested locally)
-
-🗂️ Project Structure
-
-This repository follows a mono-repository structure:
-
-INFOSYS-SPRINGBOARD-INSURAI-JAVA-TECH-STACK-PROJECT
-├── insurai-backend   → Spring Boot backend
-├── insurai-frontend  → React (Vite) frontend
-└── README.md
-
-⚙️ Technology Stack
-Backend
-
-Java
-
-Spring Boot – REST API development
-
-Spring Security & JWT – Authentication and authorization
-
-Frontend
-
-React (Vite) – Fast and modular UI
-
-HTML, CSS, JavaScript
-
-Axios – API communication
-
-Database
-
-Supabase – Cloud-hosted PostgreSQL database
-
-AI Integration
-
-Cohere AI – Natural language processing and AI-generated responses
-
-Tools
-
-GitHub – Version control
-
-Postman – API testing
-
-Netlify – Frontend deployment
+Backend is a Spring Boot application tested locally and via Postman.
 
 🧱 System Architecture
-
-The Insurai system follows a three-tier architecture:
-
 Frontend (React + Vite)
         |
-        | REST APIs
+        | REST APIs (JSON)
         |
 Backend (Spring Boot)
         |
-        |------------------|
-   Supabase Database   Cohere AI
+        | JPA / Hibernate
+        |
+Database (Supabase – PostgreSQL)
+        |
+AI Integration (Cohere API)
+
+🛠️ Technology Stack
+🔹 Frontend
+
+React (Vite)
+
+JavaScript, HTML5, CSS3
+
+Axios (API calls)
+
+React Router (Routing)
+
+Role-based dashboards
+
+🔹 Backend
+
+Java 21
+
+Spring Boot
+
+Spring Security + JWT
+
+Spring Data JPA
+
+Hibernate ORM
+
+RESTful APIs
+
+🔹 Database
+
+Supabase (PostgreSQL – cloud hosted)
+
+🔹 AI & Cloud
+
+Cohere AI (chatbot & intelligent responses)
+
+Supabase Storage (file handling)
+
+🔹 Tools
+
+Git & GitHub
+
+Postman (API testing)
+
+Netlify (Frontend deployment)
+
+Eclipse IDE
+
+👥 User Roles & Functionalities
+👤 Admin
+
+Secure login (JWT based)
+
+Manage users (HR, Agents, Employees)
+
+View all claims
+
+Fraud detection dashboard
+
+Audit logs & reports
+
+Policy management
+
+👨‍💼 HR
+
+Employee onboarding
+
+Policy assignment
+
+Fraud monitoring
+
+Reports & analytics
+
+🧑‍💻 Agent
+
+Claim handling
+
+Query resolution
+
+Availability management
+
+Reports dashboard
+
+👩‍💻 Employee
+
+Registration & login
+
+View assigned policies
+
+Submit claims
+
+Ask insurance-related questions (AI Chatbot)
+
+Track claim status
+
+Notifications & support
+
+🔐 Authentication & Security
+
+JWT-based authentication
+
+Role-based authorization
+
+Password encryption using BCrypt
+
+Custom authentication filters for each role
+
+CORS configuration enabled
+
+📁 Project Structure
+INFOSYS-SPRINGBOARD-INSURAI-JAVA-TECH-STACK-PROJECT
+│
+├── insurai-backend
+│   ├── controller
+│   ├── service
+│   ├── repository
+│   ├── model
+│   ├── config
+│   └── pom.xml
+│
+├── insurai-frontend
+│   ├── src
+│   ├── pages
+│   ├── dashboard
+│   ├── api.js
+│   └── vite.config.js
+│
+└── README.md
+
+🔗 API Usage (Postman Tested)
+🔑 Admin Login API
+POST http://localhost:8080/admin/login
 
 
-Frontend communicates with backend via REST APIs
+Request Body (JSON):
 
-Backend handles business logic, authentication, and AI integration
+{
+  "email": "admin@insurai.com",
+  "password": "Admin@123"
+}
 
-Supabase manages persistent data
 
-Cohere AI generates intelligent responses
+Response:
 
-🔧 Backend Overview
+{
+  "message": "Login successful",
+  "name": "Admin",
+  "role": "ADMIN",
+  "token": "<JWT_TOKEN>"
+}
 
-The backend is developed using Spring Boot and follows the MVC architecture.
 
-Key Components
+✔️ API tested successfully using Postman
+✔️ JWT token used for secured endpoints
 
-Controllers – Handle HTTP requests
+🚀 Frontend Deployment (Netlify)
 
-Services – Business logic and AI integration
+Connected GitHub repository to Netlify
 
-Repositories – Database operations
+Configured monorepo build settings
 
-Security – JWT-based role authentication
+Build command: npm run build
 
-Example Controllers
+Publish directory: insurai-frontend/dist
 
-AuthController
-
-PolicyController
-
-ClaimController
-
-ChatbotController
-
-🎨 Frontend Overview
-
-The frontend is built using React with Vite to provide a responsive and user-friendly interface.
-
-Features
-
-User login and registration
-
-Role-based dashboards (Admin, HR, Agent, Employee)
-
-Insurance policy viewing
-
-AI-powered chatbot for insurance queries
-
-🔌 APIs
-
-Some important REST APIs implemented:
-
-POST /api/auth/login – User authentication
-
-POST /api/chatbot/query – AI-based insurance query
-
-GET /api/policies – Fetch insurance policies
-
-POST /api/claims – Submit insurance claims
+Auto-deployment enabled on GitHub push
 
 🧪 Testing
 
 Backend APIs tested using Postman
 
-Frontend tested through manual UI testing
+Frontend tested on live Netlify URL
 
-All core functionalities validated successfully
+Role-based routing verified
 
-▶️ How to Run the Project Locally
-Backend
+JWT authorization validated
 
-Navigate to insurai-backend
+📸 Screenshots & Proofs
 
-Configure environment variables (Supabase & Cohere keys)
+Login & Registration pages
 
-Run the Spring Boot application
+Employee Dashboard
 
-Frontend
+Admin & Agent dashboards
 
-Navigate to insurai-frontend
+Postman API success responses
 
-Install dependencies
+Netlify deployment logs
 
-npm install
+(Screenshots attached separately in documentation)
 
+✅ Project Status
 
-Start application
+✔️ Backend – Completed
+✔️ Frontend – Completed
+✔️ Deployment – Completed
+✔️ API Testing – Completed
+✔️ Documentation – In Progress
 
-npm run dev
+🏁 Conclusion
 
-📄 Documentation
-
-The project documentation includes:
-
-Abstract and problem statement
-
-Agile sprint planning
-
-Architecture diagram
-
-Functional and non-functional requirements
-
-Testing evidence
-
-Screenshots of UI, APIs, and GitHub repository
-
- Conclusion
-
-Insurai demonstrates a complete AI-enabled full-stack application using modern technologies. The project follows Agile practices and successfully integrates AI to provide an efficient insurance assistance solution.
+Insurai demonstrates a real-world enterprise-level insurance solution using Java full-stack development with AI integration.
+The project follows clean architecture, secure coding practices, and modern deployment workflows.
 
 👨‍💻 Project Context
 
