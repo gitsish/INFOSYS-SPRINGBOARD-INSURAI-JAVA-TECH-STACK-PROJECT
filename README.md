@@ -1,7 +1,14 @@
 🛡️ Insurai – AI Powered Insurance Assistance System
 📌 Project Overview
 
-Insurai is a full-stack AI-powered insurance assistance platform developed as part of the Infosys Springboard Java Tech Stack Project. The application helps users understand insurance policies, submit queries, and receive intelligent responses using Cohere AI. The system is built using Spring Boot for the backend and React (Vite) for the frontend, with Supabase used as the cloud database.
+Insurai is a full-stack AI-powered insurance assistance platform developed as part of the Infosys Springboard – Java Tech Stack Project. The application helps users understand insurance policies, submit insurance-related queries, and receive intelligent responses using Cohere AI. The system is built using Spring Boot for the backend and React (Vite) for the frontend, with Supabase used as the cloud database.
+
+🌐 Live Application
+
+Frontend (Deployed on Netlify):
+👉 https://effortless-speculoos-08f92d.netlify.app/
+
+Backend: Spring Boot application (deployment-ready, tested locally)
 
 🗂️ Project Structure
 
@@ -17,13 +24,13 @@ Backend
 
 Java
 
-Spring Boot – RESTful API development
+Spring Boot – REST API development
 
 Spring Security & JWT – Authentication and authorization
 
 Frontend
 
-React (Vite) – Fast and modular UI development
+React (Vite) – Fast and modular UI
 
 HTML, CSS, JavaScript
 
@@ -31,17 +38,19 @@ Axios – API communication
 
 Database
 
-Supabase – Cloud-hosted PostgreSQL database for storing user and application data
+Supabase – Cloud-hosted PostgreSQL database
 
 AI Integration
 
-Cohere AI – Used for natural language processing and AI-based insurance query responses
+Cohere AI – Natural language processing and AI-generated responses
 
 Tools
 
 GitHub – Version control
 
 Postman – API testing
+
+Netlify – Frontend deployment
 
 🧱 System Architecture
 
@@ -57,13 +66,13 @@ Backend (Spring Boot)
    Supabase Database   Cohere AI
 
 
-The frontend interacts with the backend through REST APIs
+Frontend communicates with backend via REST APIs
 
-The backend handles business logic, authentication, and integrations
+Backend handles business logic, authentication, and AI integration
 
-Supabase manages persistent data storage
+Supabase manages persistent data
 
-Cohere AI generates intelligent responses to insurance queries
+Cohere AI generates intelligent responses
 
 🔧 Backend Overview
 
@@ -71,13 +80,13 @@ The backend is developed using Spring Boot and follows the MVC architecture.
 
 Key Components
 
-Controllers – Handle incoming HTTP requests
+Controllers – Handle HTTP requests
 
 Services – Business logic and AI integration
 
-Repositories – Database interaction using Supabase
+Repositories – Database operations
 
-Security – JWT-based authentication and role-based access
+Security – JWT-based role authentication
 
 Example Controllers
 
@@ -103,11 +112,9 @@ Insurance policy viewing
 
 AI-powered chatbot for insurance queries
 
-API integration using Axios
-
 🔌 APIs
 
-Some key REST APIs implemented:
+Some important REST APIs implemented:
 
 POST /api/auth/login – User authentication
 
@@ -123,9 +130,9 @@ Backend APIs tested using Postman
 
 Frontend tested through manual UI testing
 
-All core functionalities were validated before integration
+All core functionalities validated successfully
 
-▶️ How to Run the Project
+▶️ How to Run the Project Locally
 Backend
 
 Navigate to insurai-backend
@@ -143,7 +150,7 @@ Install dependencies
 npm install
 
 
-Start the application
+Start application
 
 npm run dev
 
@@ -151,11 +158,11 @@ npm run dev
 
 The project documentation includes:
 
-Abstract
-
-Architecture diagram
+Abstract and problem statement
 
 Agile sprint planning
+
+Architecture diagram
 
 Functional and non-functional requirements
 
@@ -163,10 +170,10 @@ Testing evidence
 
 Screenshots of UI, APIs, and GitHub repository
 
-📄 Conclusion
+ Conclusion
 
-Insurai demonstrates a complete AI-enabled full-stack application using modern technologies. By integrating Cohere AI with a secure and scalable backend and a responsive frontend, the system provides an efficient solution for insurance assistance while following Agile development practices.
+Insurai demonstrates a complete AI-enabled full-stack application using modern technologies. The project follows Agile practices and successfully integrates AI to provide an efficient insurance assistance solution.
 
 👨‍💻 Project Context
 
-Developed as part of the Infosys Springboard – Java Tech Stack Program By AAISHA SULTANA GUDURU -22501A4401 CSE-DATA SCIENCE-PVPSIT.
+Developed as part of Infosys Springboard – Java Tech Stack Program By AAISHA SULTANA GUDURU-22501A4401 CSE-DATA SCIENCE PVPSIT
