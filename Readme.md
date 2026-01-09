@@ -348,11 +348,13 @@ Institute: PVPSIT, Vijayawada
 **Team Members**
 1. Anushka Dutta  
 2. Ananya Gupta
-   Github link: https://github.com/A-N-A-N-Y-A-25/InsurAI-Project  
-3. Manisha Mohanty
+   
+   Github link: https://github.com/A-N-A-N-Y-A-25/InsurAI-Project
+    
+4. Manisha Mohanty
    
     Github Link: https://github.com/manishamohanty290/InsurAI-Corporate-policy-automation-and-intelligence-systemss/tree/main/DBMS/DBMS
-4. Feroza Sultana
+5. Feroza Sultana
    
     Github Link: https://github.com/firozasulthana/InsureAI.git 
 
