@@ -338,7 +338,9 @@ https://drive.google.com/drive/folders/1PpRvgcAbskYgv3I545NkfslyLUSdWW0t?usp=dri
 
 **Team Leader**  
 Aaisha Sultana Guduru  
+
 Github Link: https://github.com/gitsish/INFOSYS-SPRINGBOARD-INSURAI-JAVA-TECH-STACK-PROJECT
+
 Roll No: 22501A4401  
 Branch: CSE – Data Science  
 Institute: PVPSIT, Vijayawada  
@@ -348,8 +350,10 @@ Institute: PVPSIT, Vijayawada
 2. Ananya Gupta
    Github link: https://github.com/A-N-A-N-Y-A-25/InsurAI-Project  
 3. Manisha Mohanty
+   
     Github Link: https://github.com/manishamohanty290/InsurAI-Corporate-policy-automation-and-intelligence-systemss/tree/main/DBMS/DBMS
 4. Feroza Sultana
+   
     Github Link: https://github.com/firozasulthana/InsureAI.git 
 
 ---
