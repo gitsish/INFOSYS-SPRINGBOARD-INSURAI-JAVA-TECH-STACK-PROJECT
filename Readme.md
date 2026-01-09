@@ -23,39 +23,61 @@ The project is implemented and documented **milestone-wise** following enterpris
 ## 🧱 System Architecture
 SYSTEM ARCHITECTURE
 
-┌────────────────────────────┐
-│   Frontend (React + Vite)   │
-│   - Role-based Dashboards   │
-│   - Axios API Calls         │
-└─────────────┬──────────────┘
-              │
-              │  REST APIs (JSON over HTTP)
-              ▼
-┌────────────────────────────┐
-│   Backend (Spring Boot)    │
-│   - Controllers            │
-│   - Services               │
-│   - JWT Security           │
-│   - Business Logic         │
-└─────────────┬──────────────┘
-              │
-              │  JPA / Hibernate
-              ▼
-┌────────────────────────────┐
-│   Database                 │
-│   - MySQL (Local)          │
-│   - Supabase PostgreSQL    │
-└─────────────┬──────────────┘
-              │
-              ▼
-┌────────────────────────────┐
-│   AI & Cloud Services      │
-│   - AI Chatbot             │
-│   - Fraud Intelligence     │
-│   - Supabase Storage       │
-└────────────────────────────┘
+Client Layer
+------------
+- Web Browser
+- Role-based Users (Admin, HR, Agent, Employee)
 
----
+        │
+        │ HTTPS Requests
+        ▼
+
+Frontend Layer
+--------------
+Technology : React + Vite
+Responsibilities :
+- User Interface Rendering
+- Role-based Navigation
+- Form Validation
+- API Consumption using Axios
+
+        │
+        │ REST APIs (JSON)
+        ▼
+
+Backend Layer
+-------------
+Technology : Spring Boot
+Responsibilities :
+- REST API Endpoints
+- Authentication & Authorization (JWT)
+- Business Logic Processing
+- Request Validation & Exception Handling
+
+        │
+        │ JPA / Hibernate
+        ▼
+
+Database Layer
+--------------
+Technology :
+- MySQL (Local)
+- Supabase PostgreSQL (Cloud)
+Responsibilities :
+- User & Role Data
+- Policy & Claim Data
+- Queries, Notifications & Audit Logs
+
+        │
+        ▼
+
+AI & Cloud Services Layer
+------------------------
+Components :
+- AI Chatbot (Employee Assistance)
+- Fraud Detection Logic
+- Supabase Cloud Storage
+- Notification Services
 
 ## 🛠️ Technology Stack
 
@@ -90,50 +112,54 @@ SYSTEM ARCHITECTURE
 ---
 
 ## 📂 Repository Structure
-
 PROJECT ARCHITECTURE
 
-┌───────────────────────────────────────┐
-│           Presentation Layer          │
-│        (React + Vite Frontend)         │
-│  - Login & Registration Pages          │
-│  - Role-based Dashboards               │
-│  - Policy, Claim & Query UI            │
-│  - Chatbot Interface                   │
-└───────────────┬───────────────────────┘
-                │
-                │ REST APIs (JSON)
-                ▼
-┌───────────────────────────────────────┐
-│           Application Layer            │
-│          (Spring Boot Backend)         │
-│  - Controllers (REST APIs)             │
-│  - Service Layer (Business Logic)      │
-│  - JWT Authentication & Authorization │
-│  - Validation & Exception Handling    │
-└───────────────┬───────────────────────┘
-                │
-                │ JPA / Hibernate
-                ▼
-┌───────────────────────────────────────┐
-│              Data Layer                │
-│        (MySQL / Supabase PostgreSQL)   │
-│  - User Data                           │
-│  - Policies                            │
-│  - Claims                              │
-│  - Queries & Audit Logs                │
-└───────────────┬───────────────────────┘
-                │
-                ▼
-┌───────────────────────────────────────┐
-│        AI & Cloud Integration Layer    │
-│  - AI Chatbot                          │
-│  - Fraud Detection Logic               │
-│  - Supabase Cloud Storage              │
-│  - Notifications & Logs                │
-└───────────────────────────────────────┘
+Presentation Layer
+------------------
+Technology : React + Vite
+Components :
+- Login & Registration Pages
+- Role-based Dashboards
+- Policy, Claim & Query UI
+- Chatbot Interface
 
----
+        │
+        │ REST APIs (JSON)
+        ▼
+
+Application Layer
+-----------------
+Technology : Spring Boot
+Components :
+- REST Controllers
+- Service Layer (Business Logic)
+- JWT Authentication & Authorization
+- Validation & Exception Handling
+
+        │
+        │ JPA / Hibernate
+        ▼
+
+Data Layer
+----------
+Technology : MySQL / Supabase PostgreSQL
+Data :
+- User Data
+- Policies
+- Claims
+- Queries
+- Audit Logs
+
+        │
+        ▼
+
+AI & Cloud Integration Layer
+----------------------------
+Components :
+- AI Chatbot
+- Fraud Detection Logic
+- Supabase Cloud Storage
+- Notifications & System Logs
 
 ## 👥 User Roles
 
