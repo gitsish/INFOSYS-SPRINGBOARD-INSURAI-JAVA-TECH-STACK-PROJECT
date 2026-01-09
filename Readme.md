@@ -338,7 +338,7 @@ https://drive.google.com/drive/folders/1PpRvgcAbskYgv3I545NkfslyLUSdWW0t?usp=dri
 
 **Team Leader**  
 
-        # Aaisha Sultana Guduru  
+   Aaisha Sultana Guduru  
 
 Github Link: https://github.com/gitsish/INFOSYS-SPRINGBOARD-INSURAI-JAVA-TECH-STACK-PROJECT
 
