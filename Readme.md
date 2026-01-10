@@ -348,6 +348,8 @@ Institute: PVPSIT, Vijayawada
 
 **Team Members**
 1. Anushka Dutta  
+                Github Link:https://github.com/ANU-JUI/InsurAI-Policy-Automation-system
+
 2. Ananya Gupta
    
    Github link: https://github.com/A-N-A-N-Y-A-25/InsurAI-Project
